@@ -1,0 +1,483 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: "Segoe UI";
+    background: #f6f6f9;
+    -webkit-user-select: none;
+    user-select: none;
+    color: #363949;
+}
+
+.primary {
+    color: #7380ec;
+}
+
+.danger {
+    color: #ff7782;
+}
+
+.warning {
+    color: #ffbb55;
+}
+
+.success {
+    color: #41f1b6;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 14rem auto 23rem;
+    width: 99%;
+}
+
+/* ->->->->->->->-> ASIDE SECTION <-<-<-<-<-<-<-<- */
+
+.container aside {
+    padding-left: 1rem;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.container aside .logo {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+    font-size: large;
+    font-weight: 700;
+}
+
+aside .logo .logo-span {
+    color: #7380ec;
+}
+
+.container aside .logo .img-logo {
+    width: 2.3rem;
+}
+
+aside .logo p {
+    margin-left: .5rem;
+}
+
+aside .links {
+    padding-left: 1rem;
+    margin-top: 4.5rem;
+}
+
+aside .links .link a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    color: #7d8da1;
+    font-size: 1rem;
+    font-weight: 600;
+    gap: .7rem;
+    transition: all 200ms ease;
+}
+
+aside .links .link a:hover {
+    margin-left: .9rem;
+    color: #7380ec;
+    transform: scale(1.1);
+}
+
+.links .link i {
+    font-size: 1.2rem;
+}
+
+.links .link:last-child {
+    position: absolute;
+    bottom: 0rem;
+}
+
+.links .link span[class="messages"] {
+    background-color: #FF0000;
+    color: #FFF;
+    opacity: .5;
+    border-radius: .2rem;
+    padding: .1rem .5rem;
+    font-size: .8rem;
+}
+
+/* ->->->->->->->-> MAIN SECTION <-<-<-<-<-<-<-<- */
+
+main {
+    margin: 1.1rem 0 0 1rem;
+}
+
+.container main .date input[type="date"] {
+    border: none;
+    outline: none;
+    background-color: #848bc82e;
+    padding: .5rem 2rem;
+    border-radius: .4rem;
+    margin-bottom: 1rem;
+    color: #363949;
+}
+
+main h1 {
+    margin-bottom: 1rem;
+}
+
+/* ->->->->->->->-> ANALYTICS SECTION <-<-<-<-<-<-<-<- */
+
+main .analytics-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 1rem;
+    gap: 2rem;
+}
+
+.analytics {
+    width: 17rem;
+    height: 14rem;
+    border-radius: 2rem;
+    box-shadow: .3rem .3rem 2rem rgba(0, 0, 0, .2);
+    cursor: pointer;
+    padding: 1rem;
+    transition: all 300ms ease;
+    background-color: white;
+}
+
+.analytics:hover {
+    box-shadow: none;
+}
+
+.analytics i {
+    font-size: 2rem;
+    color: #FFF;
+    padding: .4rem;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    background: #7380ec;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.analytics:nth-child(2) i {
+    background: #a105c0;
+}
+
+.analytics:last-child i {
+    background: #c00563;
+}
+
+.progress svg circle {
+    fill: none;
+    stroke: #0202ff;
+    opacity: 0.7;
+    stroke-width: 14;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 200;
+    stroke-dashoffset: 10;
+}
+
+.analytics:nth-child(2) .analytic .progress svg circle {
+    stroke: #ff7782;
+    stroke-dasharray: 200;
+    stroke-dashoffset: 50;
+}
+
+.analytics:last-child .analytic .progress svg circle {
+    stroke: #41f1b6;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 10;
+}
+
+.analytics:nth-child(2) i {
+    background: #ff7782;
+}
+
+.analytics:nth-child(3) i {
+    background: #41f1b6;
+}
+
+.analytics .analytic {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.analytics .analytic .progress {
+    position: relative;
+    width: 94px;
+    height: 94px;
+    border-radius: 50%;
+}
+
+.analytics .analytic .progress .percent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: #7d8da1;
+}
+
+.analytics .analytic .info h1 {
+    font-weight: 800;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    color: #484a57;
+}
+
+.analytics .analytic .info h3 {
+    font-size: .8rem;
+    padding-top: 1.5rem;
+}
+
+.analytics small {
+    color: #677483;
+    font-size: .8rem;
+    text-decoration: underline;
+}
+
+@keyframes top-bottom {
+    0% {
+        
+    }
+    100% {}
+}
+
+/* ->->->->->->->-> ORDERS SECTION <-<-<-<-<-<-<-<- */
+
+.orders table {
+    padding: 2rem 3rem;
+    box-shadow: .4rem .4rem 2rem rgba(0, 0, 0, 0.3);
+    border-radius: 3rem;
+    background-color: #FFF;
+    width: 100%;
+    transition: all 300ms ease;
+}
+
+main table thead th {
+    color: rgb(65, 61, 61);
+}
+
+main table tbody tr {
+    font-size: .9rem;
+}
+
+main table tr td {
+    border-bottom: 1px solid rgba(132, 139, 200, 0.18);
+    height: 3rem;
+    text-align: center;
+    color: #677483;
+}
+
+main table tr:last-child td {
+    border: none;
+}
+
+main table:hover {
+    box-shadow: none;
+}
+
+main table tr td:last-child:hover {
+    cursor: pointer;
+    color: #7380ec;
+}
+
+.orders {
+    margin-top: 2rem;
+}
+
+.orders a {
+    display: block;
+    margin-top: 1rem;
+    text-align: center;
+    color: #7380ec;
+}
+
+h1 {
+    font-size: 1.4rem;
+}
+
+/* ->->->->->->->-> ADMIN / RECENT UPDATES SECTION <-<-<-<-<-<-<-<- */
+
+.right-side .admin-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.right-side .admin-profile img {
+    border-radius: 50%;
+    border: 2px solid #7380ec;
+}
+
+.right-side .admin-profile .admin {
+    margin-left: 9rem;
+    color: #7d8da1;
+}
+
+.right-side .admin-profile .admin span {
+    font-weight: 600;
+    color: #000;
+}
+
+.recent-updates {
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    box-shadow: .4rem .4rem 2rem rgba(0, 0, 0, 0.3);
+    margin-left: 1.5rem;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    transition: all 300ms ease;
+}
+
+.recent-updates:hover {
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.recent-updates img {
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.right-side h1 {
+    margin: 1rem 0 2rem 2rem;
+}
+
+.recent-update span {
+    font-size: .8rem;
+    color: #7d8da1;
+}
+
+.recent-update .notification:hover span {
+    color: green;
+}
+
+.recent-update b {
+    font-size: .8rem;
+    color: #2c343d;
+}
+
+.recent-updates small {
+    font-size: .7rem;
+    color: #7d8da1;
+    padding-left: 3.7rem;
+}
+
+.recent-update {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    transition: all 300ms ease;
+}
+
+.recent-update:hover {
+    width: 100%;
+    background-color: rgb(221, 214, 214);
+    padding-left: 1rem;
+    border-radius: 4rem;
+}
+
+/* ->->->->->->->-> SALES ANALYTICS SECTION <-<-<-<-<-<-<-<- */
+
+.sales-analytics {
+    margin-left: 1.5rem;
+}
+
+.sales-analytics .sales {
+    box-shadow: .4rem .4rem 2rem rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    padding: 2rem .5rem;
+    margin-bottom: 1rem;
+    background-color: #FFF;
+    transition: all 300ms ease;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sales .info small {
+    font-size: .7rem;
+    color: #7d8da1;
+}
+
+.sales p {
+    font-weight: 600;
+}
+
+.sales p:nth-child(3) {
+    font-size: .7rem;
+    font-weight: 700;
+    font-family: Verdana;
+}
+
+.sales-analytics .sales:hover {
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.sales-analytics .sales i {
+    background-color: #7380ec;
+    padding: 1rem;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sales:nth-child(2) i {
+    background: #ff7782;
+}
+
+.sales:nth-child(3) i {
+    background: #41f1b6;
+}
+
+.add-btn {
+    padding: 2rem 5rem;
+    height: 6rem;
+    text-align: center;
+    width: 100%;
+    border: 2px dashed #7380ec;
+    border-radius: 1rem;
+    box-shadow: .4rem .4rem 2rem rgba(0, 0, 0, 0.3);
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 300ms ease;
+    margin-bottom: 1rem;
+}
+
+.add-btn:hover {
+    background: #7380ec;
+    color: #FFF;
+    box-shadow: none;
+}
+
+.add-btn:hover i {
+    color: #FFF;
+}
+
+.add-btn, .add-btn i {
+    color: #7380ec;
+}

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./fontawesome-free-6.3.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Admin dashboard</title>
+</head>
+<body>
+    <div class="container">
+
+        <!-- ASIDE SECTION -->
+        
+        <aside>
+            <div class="logo">
+                <img class="img-logo" src="./images/logo.png" alt="Logo">
+                <p>Dash<span class="logo-span">Board</span></p>
+            </div>
+            <div class="links">
+                <div class="link active">
+                    <a href="">
+                        <i class="fa fa-dashboard"></i>
+                        <p>Dashboard</p>
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="">
+                        <i class="fa fa-user-circle"></i>
+                        <p>Customers</p>
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="">
+                        <i class="fa fa-shopping-cart"></i>
+                        <p>Orders</p>
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="">
+                        <i class="fa fa-chart-simple"></i>
+                        <p>Analytics</p>
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="">
+                        <i class="fa fa-message"></i>
+                        <p>Messages</p><span class="messages">17</span>
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="">
+                        <i class="fa fa-shop-lock"></i>
+                        <p>Products</p>
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="">
+                        <i class="fa fa-file-circle-exclamation"></i>
+                        <p>Reports</p>
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="">
+                        <i class="fa fa-gear"></i>
+                        <p>Settings</p>
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="">
+                        <i class="fa fa-add"></i>
+                        <p>Add Product</p>
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="">
+                        <i class="fa fa-sign-out-alt"></i>
+                        <p>Logout</p>
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- MAIN SECTION -->
+
+        <main>
+            <div class="date">
+                <h1>Dashboard</h1>
+                <input type="date" />
+            </div>
+
+            <!-- ANALYTICS SECTION -->
+
+            <div class="analytics-container">
+
+                <div class="analytics">
+                    <i class="fa fa-chart-simple"></i>
+                    <div class="analytic">
+                        <div class="info">
+                            <h3>Total Sales</h3>
+                            <h1>$78.235</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="percent">
+                                <p>85%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small>Last 12 Hours</small>
+                </div>
+
+                <div class="analytics">
+                    <i class="fa fa-chart-pie"></i>
+                    <div class="analytic">
+                        <div class="info">
+                            <h3>Total Expenses</h3>
+                            <h1>$50.457</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="percent">
+                                <p>63%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small>Last 15 Hours</small>
+                </div>
+
+                <div class="analytics">
+                    <i class="fa fa-chart-column"></i>
+                    <div class="analytic">
+                        <div class="info">
+                            <h3>Total Income</h3>
+                            <h1>$98.359</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="percent">
+                                <p>50%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small>Last 24 Hours</small>
+                </div>
+
+            </div>
+
+            <!-- ORDERS SECTION -->
+
+            <div class="orders">
+                <h1>Recent Orders</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Product Number</th>
+                            <th>Payment</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Samsung A32</td>
+                            <td>5400</td>
+                            <td>Due</td>
+                            <td class="danger">Declined</td>
+                            <td>Details</td>
+                        </tr>
+                        <tr>
+                            <td>Samsung A16</td>
+                            <td>5401</td>
+                            <td>Due</td>
+                            <td class="success">Delivered</td>
+                            <td>Details</td>
+                        </tr>
+                        <tr>
+                            <td>Lenovo Computer</td>
+                            <td>6512</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td>Details</td>
+                        </tr>
+                        <tr>
+                            <td>Hp ProBook 6540b</td>
+                            <td>4896</td>
+                            <td>Due</td>
+                            <td class="danger">Declined</td>
+                            <td>Details</td>
+                        </tr>
+                        <tr>
+                            <td>Iphone 13 Pro Max</td>
+                            <td>7512</td>
+                            <td>Due</td>
+                            <td class="success">Delivered</td>
+                            <td>Details</td>
+                        </tr>
+                        <tr>
+                            <td>Hp ProBook 6540b</td>
+                            <td>7854</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td>Details</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="">Show All</a>
+            </div>
+        </main>
+
+        <!-- ADMIN SECTION / RECENT UPDATES SECTION -->
+
+        <div class="right-side">
+
+            <div class="admin-profile">
+                <div class="admin">
+                    <p>Welcome, <span>Thomas</span></p>
+                    <small>Admin</small>
+                </div>
+                <img src="./images/person1.jpg" alt="admin photo">
+            </div>
+
+            <h1 class="">Recent Updates</h1>
+            <div class="recent-updates">
+
+                <div class="recent-update">
+                    <img src="./images/person3.jpg" alt="">
+                    <div class="notification">
+                        <b>Jack Sparrow</b>
+                        <span>Received his order Samsung A32.</span>
+                    </div>
+                </div>
+                <small>2 minutes ago</small>
+
+                <div class="recent-update">
+                        <img src="./images/person2.jpg" alt="">
+                    <div class="notification">
+                        <b>Bill Gits</b>
+                        <span>Received his order Hp ProBook 6540b.</span>
+                    </div>
+                </div>
+                <small>30 minutes ago</small>
+
+                <div class="recent-update">
+                    <img src="./images/person1.jpg" alt="">
+                    <div class="notification">
+                        <b>Mark Zuckerburg</b>
+                        <span>Received his order Iphone 13 Pro Max.</span>
+                    </div>
+                </div>
+                <small>2 hours ago</small>
+
+                <div class="recent-update">
+                    <img src="./images/person2.jpg" alt="">
+                    <div class="notification">
+                        <b>Elon Musk</b>
+                        <span>Received his order Flipper Zero.</span>
+                    </div>
+                </div>
+                <small>2 hours ago</small>
+
+            </div>
+
+            <!-- SALES ANALYTICS SECTION -->
+
+            <h1>Sales Analytics</h1>
+            <div class="sales-analytics">
+
+                <div class="sales">
+                    <i class="fa fa-shopping-cart"></i>
+                    <div class="info">
+                        <p>Online Orders</p>
+                        <small>1 day ago</small>
+                    </div>
+                    <p class="success percentage">+50%</p>
+                    <p>500</p>
+                </div>
+
+                <div class="sales">
+                    <i class="fa fa-shopping-bag"></i>
+                    <div class="info">
+                        <p>Offline Orders</p>
+                        <small>2 days ago</small>
+                    </div>
+                    <p class="danger percentage">-13%</p>
+                    <p>7851</p>
+                </div>
+
+                <div class="sales">
+                    <i class="fa fa-user-circle"></i>
+                    <div class="info">
+                        <p>New Customers</p>
+                        <small>2 days ago</small>
+                    </div>
+                    <p class="success percentage">+73%</p>
+                    <p>6540</p>
+                </div>
+
+                <button class="add-btn">
+                    <i class="fa fa-plus-square"></i>
+                    Add Product
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
